@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PetsAndFleas.ConApp.Cat">
+    <Position X="0.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAQAEAEAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetsAndFleas.ConApp.Pet">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAEAAAIABAACAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Pet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetsAndFleas.ConApp.Dog">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <InheritanceLine Type="PetsAndFleas.ConApp.Pet" ManuallyRouted="true">
+      <Path>
+        <Point X="3.25" Y="3.276" />
+        <Point X="3.25" Y="4.865" />
+        <Point X="3.75" Y="4.865" />
+        <Point X="3.75" Y="4.76" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAGAAAABAAAAAAABAAA=</HashCode>
+      <FileName>Dog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PetsAndFleas.ConApp.Flea">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAEAAAAAAAAAAAAAAAEACAAAAAAAACAAAA=</HashCode>
+      <FileName>Flea.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="actualPet" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
