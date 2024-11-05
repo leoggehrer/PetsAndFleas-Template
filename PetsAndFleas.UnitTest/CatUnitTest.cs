@@ -5,7 +5,9 @@ namespace PetsAndFleas.UnitTest
     [TestClass()]
     public class CatUnitTest
     {
-
+        /// <summary>
+        /// Tests if the first climb on a tree returns true and increments the TreesClimbed counter.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnTrueAndIncrementTreesClimbed_GivenFirstClimb()
         {
@@ -20,6 +22,9 @@ namespace PetsAndFleas.UnitTest
             Assert.AreEqual(true, result, "Katze sollte auf 1 Baum geklettert sein (Rückgabewert true erwartet)!");
         }
 
+        /// <summary>
+        /// Tests if climbing while already on a tree returns false and does not increment the TreesClimbed counter.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnFalseAndNotIncrementTreesClimbed_GivenClimbWhileOnTree()
         {
@@ -35,6 +40,9 @@ namespace PetsAndFleas.UnitTest
             Assert.AreEqual(false, result, "Katze ist gerade auf einen Baum! Rückgabewert false erwartet.");
         }
 
+        /// <summary>
+        /// Tests if climbing after climbing down returns true and increments the TreesClimbed counter.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnTrueAndIncrementTreesClimbed_GivenClimbAfterClimbingDown()
         {

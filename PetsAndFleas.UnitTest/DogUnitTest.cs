@@ -2,13 +2,12 @@
 
 namespace PetsAndFleas.UnitTest
 {
-    /// <summary>
-    ///This is a test class for DogTest and is intended
-    ///to contain all DogTest Unit Tests
-    ///</summary>
     [TestClass()]
     public class DogUnitTest
     {
+        /// <summary>
+        /// Tests if the first hunt increments the HuntedAnimals count and returns true.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnTrueAndIncrementHuntedAnimals_GivenFirstHunt()
         {
@@ -23,6 +22,9 @@ namespace PetsAndFleas.UnitTest
             Assert.AreEqual(true, actual, "Es sollte true zurückgegeben werden!");
         }
 
+        /// <summary>
+        /// Tests if the second hunt within a short pause does not increment the HuntedAnimals count and returns false.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnFalseAndNotIncrementHuntedAnimals_GivenSecondHuntWithinShortPause()
         {
@@ -38,6 +40,9 @@ namespace PetsAndFleas.UnitTest
             Assert.AreEqual(false, actual, "Es sollte false zurückgegeben werden!");
         }
 
+        /// <summary>
+        /// Tests if the hunt after a sufficient pause increments the HuntedAnimals count and returns true.
+        /// </summary>
         [TestMethod]
         public void ItShouldReturnTrueAndIncrementHuntedAnimals_GivenHuntAfterSufficientPause()
         {
